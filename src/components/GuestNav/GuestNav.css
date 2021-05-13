@@ -1,0 +1,49 @@
+.guest-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    font-size: 12px;
+    justify-content: flex-end;
+}
+
+.guest-nav__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.guest-nav__reg {
+    text-decoration: none;
+    color: #000;
+    margin: auto 30px;
+    display: block;
+}
+
+.guest-nav__reg_light {
+    color: #fff;
+}
+
+.guest-nav__login {
+    text-decoration: none;
+    color: #000;
+    width: 76px;
+    height: 32px;
+    background-color: #2BE080;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .guest-nav {
+        font-size: 10px;
+    }
+
+    .guest-nav__login {
+        width: 54px;
+        height: 26px;
+    }
+}

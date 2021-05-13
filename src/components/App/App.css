@@ -1,0 +1,25 @@
+.app {
+    font-family: Inter, Arial, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.app__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .app__container {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app__container {
+        margin: 0 14px;
+    }
+}
