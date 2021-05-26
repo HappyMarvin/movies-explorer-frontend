@@ -1,10 +1,23 @@
 import './Promo.css';
+import { Link } from "react-router-dom";
+import webPlanet from "../../images/web-planet.png";
 
 function Promo() {
   return (
-    <div className="Promo">
-
-    </div>
+    <section className="promo">
+      <div className="promo__text-wrapper">
+        <h1 className="promo__title">
+          Учебный проект студента факультета Веб-разработки.
+        </h1>
+        <p className="promo__subtitle">
+          Листайте ниже, чтобы узнать больше про этот проект и его создателя.
+        </p>
+        <Link className="promo__link" to={'#'}>Узнать больше</Link>
+      </div>
+      <div className="promo__logo-wrapper">
+        <img src={webPlanet} alt="Лого - веб-планета" className="promo__logo" />
+      </div>
+    </section>
   );
 }
 
