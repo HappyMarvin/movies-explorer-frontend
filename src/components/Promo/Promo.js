@@ -12,7 +12,7 @@ function Promo() {
         <p className="promo__subtitle">
           Листайте ниже, чтобы узнать больше про этот проект и его создателя.
         </p>
-        <Link className="promo__link" to={'#'}>Узнать больше</Link>
+        <a className="promo__link" href={'#about-project'}>Узнать больше</a>
       </div>
       <div className="promo__logo-wrapper">
         <img src={webPlanet} alt="Лого - веб-планета" className="promo__logo" />

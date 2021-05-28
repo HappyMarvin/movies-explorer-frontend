@@ -40,6 +40,7 @@ function Register() {
         title={`Пароль`}
         value={pass}
         handleChange={handleChangePass}
+        errorMessage={`Что-то пошло не так...`}
       />
       <SignButton text={`Зарегистрироваться`} />
       <SignLink text={`Войти`} link={`/signin`} preText={`Уже зарегистрированы?`} />
