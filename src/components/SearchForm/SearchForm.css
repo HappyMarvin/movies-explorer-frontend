@@ -126,6 +126,7 @@
 
     .search-form__input {
         text-align: left;
+        margin-right: 0;
     }
     .search-form__icon {
         display: none;
