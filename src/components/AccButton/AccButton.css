@@ -1,0 +1,49 @@
+.acc-button {
+    display: flex;
+    width: 100px;
+    height: 32px;
+    align-items: center;
+    border: 2px solid rgba(170, 170, 170, .2);
+    box-sizing: border-box;
+    border-radius: 50px;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.acc-button_light {
+    color: #fff;
+    border-color: rgba(170, 170, 170, .6);
+}
+
+.acc-button__text {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.acc-button::before {
+    content: url("../../images/acc-icon.svg");
+    width: 12px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+.acc-button_light::before {
+    content: url("../../images/acc-icon-white.svg");
+}
+
+@media screen and (max-width: 768px) {
+    .acc-button {
+        margin-top: auto;
+        border: 2px solid rgba(170, 170, 170, .2);
+        color: #000;
+    }
+    .acc-button::before {
+        content: url("../../images/acc-icon.svg");
+    }
+}

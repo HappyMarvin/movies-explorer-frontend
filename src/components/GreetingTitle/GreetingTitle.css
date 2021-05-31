@@ -1,0 +1,19 @@
+.greeting-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.greeting-title__profile {
+  padding: 74px 0 123px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .greeting-title {
+    text-align: center;
+  }
+}

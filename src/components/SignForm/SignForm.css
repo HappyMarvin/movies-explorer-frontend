@@ -1,0 +1,33 @@
+.sign-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+    width: 396px;
+    margin: 0 auto;
+    min-height: 560px;
+}
+
+.sign-form__wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .sign-form {
+        width: 260px;
+        height: 100%;
+    }
+
+    .sign-form__wrapper {
+        padding: 56px 0 30px;
+    }
+
+    .sign-form__logo-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}

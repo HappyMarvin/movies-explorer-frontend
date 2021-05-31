@@ -1,0 +1,25 @@
+.sign-link {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A0A0A0;
+    margin: 0;
+    padding: 0;
+}
+
+.sign-link__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #3456F3;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .sign-link {
+        font-size: 12px;
+    }
+
+    .sign-link__link {
+        font-size: 12px;
+    }
+}

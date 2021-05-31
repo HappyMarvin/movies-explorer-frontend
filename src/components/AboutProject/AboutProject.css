@@ -1,0 +1,124 @@
+.about-project {
+    padding: 110px 0 141px 0;
+}
+
+.about-project__list{
+    margin: 94px 0 110px 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about-project__item {
+    padding: 0;
+    margin: 0;
+}
+
+.about-project__item-title {
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+    margin: 0 0 26px 0;
+    padding: 0;
+}
+
+.about-project__item-subtitle {
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.about__time {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.about__week {
+    position: relative;
+    height: 36px;
+    background-color: #2BE080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.about__week:last-of-type {
+    background-color: #F2F2F2;
+}
+
+.about__week-sign {
+    font-weight: 500;
+    font-size: 14px;
+    color: #A0A0A0;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -41px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-project {
+        padding: 90px 0 121px 0;
+    }
+
+    .about-project__list{
+        margin: 70px 0 93px 0;
+        gap: 30px;
+    }
+
+    .about-project__item-title {
+        margin: 0 0 22px 0;
+    }
+
+    .about-project__item-subtitle {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .about-project__list{
+        margin: 60px 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 56px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-project__item-title {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 16px 0;
+    }
+
+    .about-project__item-subtitle {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .about__week {;
+        font-size: 11px;
+        height: 35px;
+    }
+
+    .about__week:first-of-type {
+        min-width: 100px;
+    }
+
+    .about__week-sign {
+        font-weight: 400;
+        font-size: 11px;
+        bottom: -34px;
+    }
+}
