@@ -52,6 +52,10 @@
     border: none;
 }
 
+.search-form__submit_disabled {
+    opacity: 0.5;
+}
+
 .search-form__checkbox-label {
     position: relative;
     display: flex;

@@ -1,9 +1,9 @@
 import './MoviesMore.css';
 
-function MoviesMore () {
+function MoviesMore ({ handleMore }) {
   return (
     <div className="movies-more">
-      <button className="movies-more__button">Ещё</button>
+      <button className="movies-more__button" onClick={handleMore}>Ещё</button>
     </div>
   )
 }

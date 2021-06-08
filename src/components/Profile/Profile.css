@@ -43,6 +43,13 @@
 
 .profile__input-wrapper_email {
   margin-top: 17px;
+  position: relative;
+}
+
+.profile__error {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
 }
 
 .profile__form-submit {
@@ -56,6 +63,11 @@
   line-height: 16px;
   color: #000000;
 }
+
+.profile__form-submit_disabled {
+  opacity: .5;
+}
+
 .profile__exit {
   margin: 0 auto 40px auto;
   display: block;

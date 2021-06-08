@@ -14,3 +14,7 @@
     cursor: pointer;
     margin: auto 0 16px 0;
 }
+
+.sign-button_disable {
+    opacity: .5;
+}
