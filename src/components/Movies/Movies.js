@@ -5,14 +5,16 @@ import {useContext, useEffect, useState} from "react";
 import moviesApi from "../../utils/MoviesApi";
 import EmptyMovieList from "../EmptyMovieList/EmptyMovieList";
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
+import Preloader from "../Preloader/Preloader";
 
 function Movies({ addLike, removeLike }) {
   const [movies, setMovies] = useState([]);
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [shortFilm, setShortFilm] = useState(false);
-  const [emptyList, setEmptyList] = useState('Ввидите запрос');
+  const [emptyList, setEmptyList] = useState('Ввeдите запрос');
   const [submit,setSubmit] = useState(false);
+  const [preloadActive,setPreloadActive] = useState(false);
   const currentUser = useContext(CurrentUserContext);
 
 
@@ -36,21 +38,33 @@ function Movies({ addLike, removeLike }) {
     }
   }, [movies, submit])
 
+  useEffect(() => {
+    if (movies.length) {
+      filterMovies();
+    }
+  }, [submit])
+
   useEffect(()=> {
-    localStorage.setItem('filteredMovies', JSON.stringify(filteredMovies));
+    if (filteredMovies.length) {
+      localStorage.setItem('filteredMovies', JSON.stringify(filteredMovies));
+    }
   }, [filteredMovies])
 
   const handleSubmit = () => {
     if(!searchQuery) return
+    setPreloadActive(true);
     if (!movies.length) {
       moviesApi.getMovies()
         .then(data => {
           setMovies(data);
         })
+        .catch(e => console.error(e.message))
+        .finally(()=>{
+          setPreloadActive(false);
+        })
     } else {
       setSubmit(!submit);
     }
-    setEmptyList('Ничего не найдено');
   }
 
 
@@ -63,6 +77,7 @@ function Movies({ addLike, removeLike }) {
         shortFilm={shortFilm}
         setShortFilm={setShortFilm}
       />
+      <Preloader active={preloadActive} />
       {filteredMovies.length
         ?
         <MoviesCardList moviesList={filteredMovies} addLike={addLike} removeLike={removeLike} />

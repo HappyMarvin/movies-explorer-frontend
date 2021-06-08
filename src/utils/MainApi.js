@@ -58,7 +58,7 @@ class MainApi {
 }
 
 const mainApi = new MainApi({
-  baseUrl: 'http://api.movies.happymarvin.ru',
+  baseUrl: 'https://api.movies.happymarvin.ru',
   headers: {
     'Content-Type': 'application/json'
   }

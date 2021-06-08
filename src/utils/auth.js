@@ -88,6 +88,6 @@ class Auth {
   }
 }
 
-const auth = new Auth("http://api.movies.happymarvin.ru");
+const auth = new Auth("https://api.movies.happymarvin.ru");
 
 export default  auth
