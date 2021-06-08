@@ -9,10 +9,9 @@ function AboutMe() {
         <div className="about-me__content">
           <p className="about-me__name">Владимир</p>
           <p className="about-me__description">Фронтенд-разработчик</p>
-          <p className="about-me__text">Я родился и живу в Саратове, закончил факультет экономики СГУ.
-            У меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить.
-            С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке,
-            начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
+          <p className="about-me__text">Хочу создавать новые интерфейсы и развиваться в области фронтенд-разработки.
+            В данный момент работаю Junior Frontend-разработчиком в компании DocsVision.
+            Моё хобби - это китайский чай и чайные церемонии, знаю чем отличается Те Гуань Инь от Да Хун Пао.</p>
           <ul className="about-me__list">
             <li className="about-me__item"><a href='#' className="about-me__link">Facebook</a></li>
             <li className="about-me__item"><a href='#' className="about-me__link">Github</a></li>
